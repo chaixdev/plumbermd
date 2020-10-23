@@ -1,0 +1,27 @@
+---
+title: "Wheel of time"
+output:
+  html_document:
+    self_contained: true
+params:
+  data: csv
+---
+
+The Wheel of Time is a series of high fantasy novels written by American author James Oliver Rigney Jr., under his pen name of Robert Jordan. Originally planned as a six-book series, The Wheel of Time spanned fourteen volumes, in addition to a prequel novel and two companion books. Jordan began writing the first volume, The Eye of the World, in 1984, and it was published in January 1990.[1]
+
+Jordan died in 2007 while working on what was planned to be the twelfth and final volume in the series. He prepared extensive notes so another author could complete the book according to his wishes. Fellow fantasy author and long-time Wheel of Time fan Brandon Sanderson was brought in to complete the final book, but during the writing process, it was decided that the book would be far too large to be published in one volume and would instead be published as three volumes:[2] The Gathering Storm (2009), Towers of Midnight (2010), and A Memory of Light (2013).
+
+<!-- more -->
+
+
+## about
+The series draws on numerous elements of both European and Asian mythology, most notably the cyclical nature of time found in Buddhism and Hinduism, the metaphysical concepts of balance and duality, and a respect for nature found in Taoism. Additionally, its creation story has similarities to Christianity's "Creator" (Light) and Shai'tan, "The Dark One" (Shaitan is an Arabic word that, in Islamic contexts, is used as a name for the Devil or the Satan). It was also partly inspired by Leo Tolstoy's War and Peace (1869).[3]
+
+
+The Wheel of Time is notable for its length, detailed imaginary world, well-developed magic system, and large cast of characters. The eighth through fourteenth books each reached number one on the New York Times Best Seller list. After its completion, the series was nominated for a Hugo Award.[4] According to Jordan's French publisher, as of 2017, the series has sold over 80 million copies worldwide, and it is one of the best selling epic fantasy series since The Lord of the Rings.[5] Its popularity has spawned an eponymous video game, roleplaying game, and soundtrack album. On April 20, 2017, it was announced that Sony Pictures will adapt the series for television, and on October 2, 2018, Amazon ordered the series with Sony as a co-producer.[6][7]
+
+## read the csv
+```{r }
+  csvdata <- read.csv(text=data,sep = ",", fileEncoding = "utf-8")
+  list(csvdata)
+```
