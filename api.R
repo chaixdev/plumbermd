@@ -30,7 +30,7 @@ postcsv <- function(req,res) {
   
   data <- req$body
   csvfile = read.csv(text=data,sep = ",", fileEncoding = "utf-8")
-  print(csvfile)
+  
 
   # list(csvfile)
   include_html(rmarkdown::render("wotmania.rmd", params = list(data = data)), res)
