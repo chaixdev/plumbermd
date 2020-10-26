@@ -15,7 +15,6 @@ cors <- function(req, res) {
   } else {
     plumber::forward()
   }
-  
 }
 
 #* Echo back the input
@@ -33,6 +32,6 @@ postcsv <- function(req,res) {
   
 
   # list(csvfile)
-  include_html(rmarkdown::render("wotmania.rmd", params = list(data = data)), res)
+  include_html(rmarkdown::render("example-csv-input.rmd", params = list(data = data)), res)
   
 }
