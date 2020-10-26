@@ -13,7 +13,7 @@ The R scripts are wrapped in a docker image, defined by the Dockerfile. key aspe
 - copy the scripts
 - direct the entrypoint to run the run.R script.
 
-To take the result for a spin have docker installed and run `docker build -t plumberdemo . ` in the project folder to build the docker image.
+To take the result for a spin, have docker installed and run `docker build -t plumberdemo . ` in the project folder to build the docker image.
 next, run `docker run -p 80:80 plumberdemo` to start the container. the api will be available on http://localhost
 
-For example, `http://localhost/rmd` will process and generate html for the example-r-markdown.rmd file.
+For example, `http://localhost/rmd` will process and generate html for the `example-r-markdown.rmd` file.
