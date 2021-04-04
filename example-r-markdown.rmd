@@ -3,11 +3,6 @@ title: "Habits"
 output:
   html_document:
     self_contained: true
-params:
-  data:
-    label: "dataset"
-    value: dataset.csv
-    input: file
 ---
 
 This post examines the features of [R Markdown](http://www.rstudio.org/docs/authoring/using_markdown) 

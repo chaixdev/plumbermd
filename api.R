@@ -19,19 +19,25 @@ cors <- function(req, res) {
 
 #* Echo back the input
 #* @get /rmd
-echo <- function(res) {
+function(req,res) {
+
   include_rmd("example-r-markdown.rmd", res,format = NULL)
 }
 
 #* post a csv
 #* @post /postcsv
-postcsv <- function(req,res) {
+function(req,res) {
   
   data <- req$body
-  csvfile = read.csv(text=data,sep = ",", fileEncoding = "utf-8")
-  
 
   # list(csvfile)
   include_html(rmarkdown::render("example-csv-input.rmd", params = list(data = data)), res)
   
 }
+
+# CRUD
+
+# Read   (HTTP GET)
+# Create (HTTP POST)
+# Update (HTTP PUT)
+# Delete (HTTP DELETE) 
